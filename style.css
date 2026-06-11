@@ -1,10 +1,12 @@
-﻿*{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
 }
 
-html{
+html, body{
+    width:100%;
+    overflow-x:hidden;
     scroll-behavior:smooth;
 }
 
@@ -50,9 +52,10 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px 10%;
+    padding:20px 5%;
     background:#111827;
     color:white;
+    flex-wrap:wrap;
 }
 
 .logo{
@@ -64,6 +67,7 @@ nav{
     display:flex;
     list-style:none;
     gap:25px;
+    flex-wrap:wrap;
 }
 
 .nav-links a{
@@ -86,15 +90,19 @@ nav{
     color:white;
 
     background:linear-gradient(
-    -45deg,
-    #4f46e5,
-    #7c3aed,
-    #00d4ff,
-    #ff4ecd
+        -45deg,
+        #4f46e5,
+        #7c3aed,
+        #00d4ff,
+        #ff4ecd
     );
 
     background-size:400% 400%;
     animation:gradientMove 10s ease infinite;
+}
+
+.hero-content{
+    padding:0 15px;
 }
 
 .hero-content h1{
@@ -229,7 +237,7 @@ form button:hover{
     background:#372fc2;
 }
 
-/* Social (MODERN BUTTONS) */
+/* Social */
 .social-links{
     text-align:center;
 }
@@ -301,4 +309,18 @@ footer{
     .hero-content h1{
         font-size:38px;
     }
-}
+
+    .btn{
+        padding:12px 22px;
+        font-size:16px;
+    }
+
+    .cards{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .stat-box{
+        width:90%;
+    }
+        }
